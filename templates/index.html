@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block main %}
 
-<h1>Sanzy Healthy Deals</h1>
+<h1>Possible Movie Rentals</h1>
 
 <hr />
 
@@ -44,12 +44,10 @@
       <td>{{m.Budget}}</td>
       <td>{{m.Cast}}</td>
       <td>
-        <a href="/edit/{{m.Title}}">
-            Edit
-        </a>
+        <a href="/edit/{{m.Title}}"> Edit </a>
         <a href="/delete/{{m.id}}" class="text-danger">
-            <span class="fa fa-trash"></span>
-            delete
+          <span class="fa fa-trash"></span>
+          delete
         </a>
       </td>
     </tr>
